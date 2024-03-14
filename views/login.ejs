@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Login and Registration Form</title>
+
+  <link rel="stylesheet" href="stylesheets/login.css">
+
+</head>
+
+<body>
+
+<input type="radio" id="loginForm" name="formToggle" checked>
+
+<input type="radio" id="registerForm" name="formToggle">
+
+<input type="radio" id="forgotForm" name="formToggle">
+
+  
+
+  <div class="wrapper" id="loginFormContent">
+
+    <form action="/login" method="post">
+
+      <h1>Login</h1>
+      <% if (showError == true) { %>
+        <center>
+          <h4 style="color: #ffffff; background-color: rgba(160, 160, 160, 0.137);border-radius: 12px;padding: 2px;margin-top: 15px;font-size: 15px;">
+            Oops! Data Mismatched
+          </h4>
+        </center>
+        <%} else { %>
+        <% } %>
+
+      <div class="input-box">
+
+        <input name="username" type="text" placeholder="Username" required>
+
+        
+
+      </div>
+
+      <div class="input-box">
+
+        <input name="password" type="password" placeholder="Password" required>
+
+        
+
+      </div>
+
+      <div class="checkbox1">
+
+        <label><input type="checkbox">Remember Me</label>
+
+        <label for="forgotForm">Forgot Password</label>
+
+      </div>
+
+      <button type="submit" class="btn">Login</button>
+
+      <div class="link">
+
+        <p>Don't have an account? <label for="registerForm">Register</label></p>
+
+      </div>
+
+    </form>
+
+  </div>
+
+  <div class="wrapper" id="registerFormContent">
+
+    <form action="/register" method="post" enctype="multipart/form-data" autocomplete="off">
+
+      <h1>Register</h1>
+
+      <div class="input-box">
+
+        <input name="setUsername" type="text" placeholder="Username" required>
+
+        
+
+      </div>
+
+      <div class="input-box">
+
+        <input name="setEmail" type="email" placeholder="Email" required>
+
+        
+
+      </div>
+
+      <div class="input-box">
+
+        <input name="setPassword" type="password" placeholder="Password" required>
+
+      </div>
+      <div class="input-box">
+
+        <input type="file" name="image" accept="image/png, image/jpeg, image/jpg" required>
+
+      </div>
+
+      <div class="checkbox1">
+
+        <label><input type="checkbox" required>I agree to terms & conditions</label>
+
+      </div>
+
+      <button type="submit" class="btn"  value="Upload">Register</button>
+
+      <div class="link">
+
+        <p>Already have an account? <label for="loginForm">Login</label></p>
+
+      </div>
+
+    </form>
+
+  </div>
+
+  <div class="wrapper" id="forgotFormContent">
+
+  <form action="">
+
+      <h1>Reset your password</h1>
+
+      <div class="input-box">
+
+        <input name="resetPassword" type="email" placeholder="Email" required>
+
+      </div>
+
+      <div class="input-box">
+
+      <button type="submit" class="btn">Send Request</button>
+
+      <div class="link">
+
+        <p>Don't have an account? <label for="registerForm">Register</label></p>
+
+      </div>
+
+    </form>
+
+</div>
+
+</body>
+
+</html>

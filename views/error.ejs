@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+    <link rel="stylesheet" href="stylesheets/error.css">
+</head>
+<body>
+    <div class="flex-container">
+        <div class="text-center">
+          <h1>
+            <span class="fade-in" id="digit1">4</span>
+            <span class="fade-in" id="digit2">0</span>
+            <span class="fade-in" id="digit3">4</span>
+          </h1>
+          <h3 class="fadeIn">PAGE NOT FOUND</h3>
+          <button type="button" name="button" onclick="location.href='/'">Return To Home</button>
+        </div>
+      </div>
+</body>
+</html>
+<h1><%= error.message %></h1>
+<h2><%= error.status %></h2>
+<pre><%= error.stack %></pre>
+
