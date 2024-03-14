@@ -1,5 +1,6 @@
 
   .nav{
+    user-select: none;
     width: auto;
     margin-top: 0.5%;
     background-color:#333;
