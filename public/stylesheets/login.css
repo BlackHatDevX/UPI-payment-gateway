@@ -188,26 +188,6 @@
     margin: 20px 0 15px;
   
   }
-@media screen and (max-width: 600px) {
-  .wrapper {
-    width: 90%; /* Adjust the width as needed */
-    padding: 20px; /* Adjust the padding as needed */
-  }
-  
-  .wrapper h1 {
-    font-size: 28px; /* Adjust the font size as needed */
-  }
-  
-  .input-box input {
-    font-size: 14px; /* Adjust the font size as needed */
-    padding: 15px; /* Adjust the padding as needed */
-  }
-  
-  .wrapper .btn {
-    height: 40px; /* Adjust the button height as needed */
-    font-size: 14px; /* Adjust the font size as needed */
-  }
-}
 
   
   .link p a{
